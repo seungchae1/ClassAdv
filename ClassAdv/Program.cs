@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,6 +23,19 @@ namespace ClassAdv
             Console.WriteLine("안녕하세요");
             Console.WriteLine("안녕하세요");
             Console.WriteLine("안녕하세요");
+
+
+            // 속성(Property) 실습
+            Box box = new Box(10, 10);
+            box.Width = 100;
+            try
+            {
+                box.Height = -190;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

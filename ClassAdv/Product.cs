@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClassAdv31
+namespace ClassAdv
 {
     internal class Product
     {
